@@ -56,5 +56,6 @@
 	        unregisterReceiver(myReceiver);
 	    }
 	}
-
+运行效果：
+![](https://raw.githubusercontent.com/pgao0823/Picture/master/BroadcastReceiverDemo2.gif)
 
