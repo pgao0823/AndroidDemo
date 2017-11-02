@@ -4,7 +4,7 @@
 
 1.定义三个广播接收者Receiver01、Receiver02、Receiver03都继承BroadcastReceiver
 
-Receiver03. 用getStringExtra()来获取点击按钮发送广播中携带的数据，再用setResultExtras(bundle)来对广播中携带的信息进行修改
+Receiver03. 用getStringExtra()来获取点击按钮发送广播中携带的数据，再用setResultExtras(bundle)来对广播中携带的信息进行修改,abortBroadcast()终止广播再传递
 
 	package gaopan.a04_broadcastreceiver;
 	
@@ -87,7 +87,7 @@ Receiver01.用getResultExtras(true).getString("msgFromReceiver02")来获取点�
 	    }
 	}
 
-2.在manifest中进行注册（静态），通过<intent-filter android:priority="1000">来设置广播接收的优先级
+2.在manifest中进行注册（静态），通过<intent-filter android:priority="1000">来设置广播接收的优先级,这个属性的范围在-1000到1000，数值越大，优先级越高。 
 
 	<?xml version="1.0" encoding="utf-8"?>
 	<manifest xmlns:android="http://schemas.android.com/apk/res/android"

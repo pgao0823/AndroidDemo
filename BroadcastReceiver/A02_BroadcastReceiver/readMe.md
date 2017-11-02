@@ -1,4 +1,7 @@
 #BroadcastReceiver的动态注册
+
+###又叫：非常驻型广播，当应用程序结束了，广播自然就没有了，比如你在activity中的onCreate或者onResume中订阅广播，同时你必须在onDestory或者onPause中取消广播订阅。不然会报异常，这样你的广播接收器就一个非常驻型的了。
+
 1.新建广播接收者MyReceiver继承自BroadcastReceiver
 	package gaopan.a02_broadcastreceiver;
 	
